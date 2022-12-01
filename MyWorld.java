@@ -7,7 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 
-//vibusan is the name of the me
+//vibusan
 public class MyWorld extends World
 {
 
