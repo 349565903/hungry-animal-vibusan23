@@ -39,7 +39,7 @@ public class MyWorld extends World
         int y = 0;
         addObject(apple, x, y);
     }
-    
+        
     public void gameOver()
     {
         Label gameOverLabel = new Label ("Game Over", 100);
