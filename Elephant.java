@@ -1,14 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class elephanr here.
+ * Write a description of class Elephant here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class elephanr extends Actor
+public class Elephant extends Actor
 {
-    GreenfootSound elephanrSound = new GreenfootSound("elephantcub.mp3");
+    GreenfootSound ElephantSound = new GreenfootSound("elephantcub.mp3");
     GreenfootImage[] idleRight = new GreenfootImage[5];
     GreenfootImage[] idleLeft = new GreenfootImage[5];
     
@@ -16,7 +16,7 @@ public class elephanr extends Actor
     SimpleTimer animationTimer = new SimpleTimer();
     
     
-    public elephanr()
+    public Elephant()
     {
         for(int i = 0; i < idleRight.length; i++)
         {
@@ -59,17 +59,31 @@ public class elephanr extends Actor
     
     public void act()
     {
+        int x = getX();
+        int y = getY();
+        
         if(Greenfoot.isKeyDown("left"))
         {
-            move(-2);
+            x -= 2;
             facing = "left";
         }
-        else if (Greenfoot.isKeyDown("right"))
+        
+        if (Greenfoot.isKeyDown("right"))
         {
-            move(2);
+            x += 2;
             facing = "right";
         }
         
+        if(Greenfoot.isKeyDown("up"))
+        {
+            y -= 2;
+        }
+        
+        if(Greenfoot.isKeyDown("down"))
+        {
+            y += 2;
+        }
+        setLocation(x, y);
         eat();
          
         animateElephant();
@@ -83,7 +97,7 @@ public class elephanr extends Actor
             MyWorld world = (MyWorld) getWorld();
             world.createApple();
             world.increaseScore();
-            elephanrSound.play();
+            ElephantSound.play();
         }
     }
 }

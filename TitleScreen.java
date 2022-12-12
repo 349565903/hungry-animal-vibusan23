@@ -37,24 +37,24 @@ public class TitleScreen extends World
      */
     private void prepare()
     {
-        elephanr elephanr = new elephanr();
-        addObject(elephanr,424,103);
-        elephanr.setLocation(121,76);
-        elephanr.setLocation(61,158);
+        Elephant Elephant = new Elephant();
+        addObject(Elephant,424,103);
+        Elephant.setLocation(121,76);
+        Elephant.setLocation(61,158);
         Label label = new Label("Eat the Apple to Win!", 30);
         addObject(label,228,285);
         label.setLocation(279,90);
         label.setLocation(302,82);
-        elephanr.setLocation(76,213);
+        Elephant.setLocation(76,213);
         Label label2 = new Label("Press <space> to Start!", 30);
         addObject(label2,274,322);
         label2.setLocation(315,336);
         Apple apple = new Apple();
         addObject(apple,532,199);
-        elephanr.setLocation(88,203);
+        Elephant.setLocation(88,203);
         label2.setLocation(277,336);
         label.setLocation(273,80);
-        elephanr.setLocation(85,218);
+        Elephant.setLocation(85,218);
         apple.setLocation(543,216);
         apple.setLocation(501,198);
         label.setLocation(304,86);
