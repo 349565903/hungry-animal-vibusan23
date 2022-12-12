@@ -22,7 +22,7 @@ public class MyWorld extends World
         elephanr elephant = new elephanr();
         addObject(elephant, 300, 200); 
         
-        Label scoreLabel = new Label(0,80);
+        scoreLabel = new Label(0,80);
         addObject(scoreLabel, 50, 50);
         
         createApple();

@@ -61,5 +61,6 @@ public class TitleScreen extends World
         label2.setLocation(320,335);
         label2.setLocation(257,334);
         label2.setLocation(303,326);
+        apple.setLocation(507,213);
     }
 }
